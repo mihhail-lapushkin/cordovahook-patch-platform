@@ -1,0 +1,55 @@
+{
+  "*": {
+    "inject": {
+      "{{appName}}.xcodeproj/project.pbxproj": {
+        "before": {
+          "GCC_C_LANGUAGE_STANDARD": "snippets/no-compress-png.txt"
+        }
+      }
+    }
+  },
+  
+  "Orientation:portrait": {
+    "delete": {
+      "files": [
+        "{{appName}}/Resources/splash/Default-Landscape-736h.png",
+        "{{appName}}/Resources/splash/Default-Landscape@2x~ipad.png",
+        "{{appName}}/Resources/splash/Default-Landscape~ipad.png"
+      ],
+        
+      "lines": {
+        "{{appName}}.xcodeproj/project.pbxproj": [
+          "Default-Landscape-736h.png",
+          "Default-Landscape@2x~ipad.png",
+          "Default-Landscape~ipad.png"
+        ]
+      }
+    }
+  },
+  
+  "Orientation:landscape": {
+    "delete": {
+      "files": [
+        "{{appName}}/Resources/splash/Default~iphone",
+        "{{appName}}/Resources/splash/Default@2x~iphone",
+        "{{appName}}/Resources/splash/Default-568h@2x~iphone",
+        "{{appName}}/Resources/splash/Default-Portrait~ipad",
+        "{{appName}}/Resources/splash/Default-Portrait@2x~ipad",
+        "{{appName}}/Resources/splash/Default-667h",
+        "{{appName}}/Resources/splash/Default-736h"  
+      ],
+
+      "lines": {
+        "{{appName}}.xcodeproj/project.pbxproj": [
+          "Default~iphone",
+          "Default@2x~iphone",
+          "Default-568h@2x~iphone",
+          "Default-Portrait~ipad",
+          "Default-Portrait@2x~ipad",
+          "Default-667h",
+          "Default-736h"
+        ]
+      }
+    }
+  }
+}

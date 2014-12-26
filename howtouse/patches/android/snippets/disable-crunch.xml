@@ -1,0 +1,5 @@
+    <target name="-crunch">
+      <copy todir="${out.res.absolute.dir}">
+        <fileset dir="${resource.absolute.dir}" />
+      </copy>
+    </target>

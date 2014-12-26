@@ -1,0 +1,35 @@
+{
+  "*": {
+    "copy": {
+      "files/styles.xml": "res/values/styles.xml"
+    },
+      
+    "inject": {
+      "custom_rules.xml": {
+        "before": {
+          "</project>": "snippets/disable-crunch.xml"
+        }
+      }
+    },
+      
+    "replace": {
+      "AndroidManifest.xml": {
+        "hardwareAccelerated=\"true\"": "hardwareAccelerated=\"false\"",
+        "@android:style/Theme.Black.NoTitleBar": "@style/MainTheme"
+      }
+    },
+    
+    "delete": {
+      "files": [
+        "res/drawable-land-mdpi",
+        "res/drawable-land-hdpi",
+        "res/drawable-land-ldpi",
+        "res/drawable-land-xhdpi",
+        "res/drawable-port-mdpi",
+        "res/drawable-port-hdpi",
+        "res/drawable-port-ldpi",
+        "res/drawable-port-xhdpi"
+      ]
+    }
+  }
+}

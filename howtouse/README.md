@@ -1,0 +1,1 @@
+This folder contains an example of things that you would need to define in your Cordova project to start using this hook.

@@ -1,0 +1,12 @@
+{
+  // enabling warnings
+  "curly": true,      // require brackets for all blocks
+  "immed": true,      // require wrapping immediately invoked functions in parentheses
+  "noempty": true,    // disallow empty blocks
+  "camelcase": true,  // require either camelCase or UPPER_CASE
+  "trailing": true,   // disallow trailing whitespaces
+  "unused": true,     // disallow unused variables
+
+   // disabling warnings
+  "-W065": true       // radix
+}

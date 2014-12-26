@@ -1,0 +1,39 @@
+{
+  "name": "cordovahook-patch-platform",
+  "description": "Declaratively describe a set of modifications/patches to be applied to the added platform",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mihhail-lapushkin/cordovahook-patch-platform",
+  "author": {
+    "name": "Mihhail Lapushkin",
+    "email": "miha@smail.ee",
+    "url": "http://www.linkedin.com/in/mihhail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mihhail-lapushkin/cordovahook-patch-platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mihhail-lapushkin/cordovahook-patch-platform/issues"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/mihhail-lapushkin/cordovahook-patch-platform/blob/master/LICENSE-MIT"
+  }],
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "fs-extra": "~0.13.0",
+    "node-xml-lite": "~0.0.3"
+  },
+  "keywords": [
+    "cordovahook",
+    "cordova",
+    "patch",
+    "platform",
+    "splashes",
+    "icon",
+    "splashscreen",
+    "splash"
+  ]
+}
