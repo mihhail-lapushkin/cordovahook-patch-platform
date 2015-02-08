@@ -1,7 +1,7 @@
 {
   "name": "cordovahook-patch-platform",
   "description": "Declaratively describe a set of modifications/patches to be applied to the added platform",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/mihhail-lapushkin/cordovahook-patch-platform",
   "author": {
     "name": "Mihhail Lapushkin",
