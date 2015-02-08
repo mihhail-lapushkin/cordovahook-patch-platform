@@ -93,7 +93,9 @@ This module will be called by the hook after applying patches from `patches.json
 Refer to [howtouse](https://github.com/mihhail-lapushkin/cordovahook-patch-platform/tree/master/howtouse) folder to get an understanding of how to setup this hook in your project.
 
 ## Release History
- * **0.1.1** / 2015-02-08
-   * Fixed a bug, which caused failure when `package.json` was not defined for a platform
+ * **0.2.0** / 2015-02-08
+   * Fixed a bug, which caused failure when `package.json` was not defined for a platform.
+   * Updated dependencies.
+   * Some cleanups here and there.
  * **0.1.0** / 2014-12-26
    * First version.
