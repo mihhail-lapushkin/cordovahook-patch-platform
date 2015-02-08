@@ -1,7 +1,7 @@
 {
   "name": "cordovahook-patch-platform",
   "description": "Declaratively describe a set of modifications/patches to be applied to the added platform",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/mihhail-lapushkin/cordovahook-patch-platform",
   "author": {
     "name": "Mihhail Lapushkin",
@@ -23,10 +23,11 @@
     "node": ">=0.8.0"
   },
   "dependencies": {
-    "fs-extra": "~0.13.0",
-    "node-xml-lite": "~0.0.3"
+    "fs-extra": "^0.13.0",
+    "node-xml-lite": "^0.0.3"
   },
   "keywords": [
+    "cordova hook",
     "cordovahook",
     "cordova",
     "patch",

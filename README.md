@@ -24,19 +24,19 @@ Here you describe your patches. The format is as follows:
   "*": {
     "copy": {
       "<path-to-src-file-relative-to-this-folder>": "<path-to-dest-file-relative-to-platform-folder>",
-      ...
+      "...": "..."
     },
       
     "inject": {
       "<path-to-file-relative-to-platform-folder>": {
         "before": {
           "<string-before-which-the-contents-of-the-file-will-be-injected>": "<path-to-file-relative-to-this-folder>",
-          ...
+          "...": "..."
         },
         
         "after": {
           "<string-before-which-the-contents-of-the-file-will-be-injected>": "<path-to-file-relative-to-this-folder>",
-          ...
+          "...": "..."
         }
       }
     },
@@ -44,30 +44,33 @@ Here you describe your patches. The format is as follows:
     "replace": {
       "<path-to-file-relative-to-platform-folder>": {
         "<string-to-look-for>": "<replacement-string>",
-        ...
+        "...": "..."
       }
     },
     
     "delete": {
       "files": [
         "<path-to-file-or-folder-relative-to-platform-folder>",
-        ...
+        "..."
       ],
 
       "lines": {
         "<path-to-file-relative-to-platform-folder>": [
           "<string-that-the-line-should-contain>",
-          ...
+          "..."
         ]
       }
     }
   },
   
   "<preference-name>:<preference-value>": {
-    ...
+    "...": {
+    }
   },
   
-  ...
+  "...": {
+
+  }
 }
 ```
 So, there are 5 types of patches currently supported:
@@ -90,5 +93,7 @@ This module will be called by the hook after applying patches from `patches.json
 Refer to [howtouse](https://github.com/mihhail-lapushkin/cordovahook-patch-platform/tree/master/howtouse) folder to get an understanding of how to setup this hook in your project.
 
 ## Release History
+ * **0.1.1** / 2015-02-08
+   * Fixed a bug, which caused failure when `package.json` was not defined for a platform
  * **0.1.0** / 2014-12-26
    * First version.
