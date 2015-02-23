@@ -35,7 +35,7 @@ Here you describe your patches. The format is as follows:
         },
         
         "after": {
-          "<string-before-which-the-contents-of-the-file-will-be-injected>": "<path-to-file-relative-to-this-folder>",
+          "<string-after-which-the-contents-of-the-file-will-be-injected>": "<path-to-file-relative-to-this-folder>",
           "...": "..."
         }
       }
