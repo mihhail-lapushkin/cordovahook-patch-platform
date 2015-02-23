@@ -94,7 +94,7 @@ Refer to [howtouse](https://github.com/mihhail-lapushkin/cordovahook-patch-platf
 
 ## Release History
  * **0.2.0 – 0.2.2** / 2015-02-08
-   * Fixed a bug, which caused failure when `package.json` was not defined for a platform.
+   * Fixed a bug, which caused failure when `patches.json` was not defined for a platform.
    * Updated dependencies.
    * Some cleanups here and there.
  * **0.1.0** / 2014-12-26
