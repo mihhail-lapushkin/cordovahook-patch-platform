@@ -3,7 +3,7 @@
 ![](https://badge.fury.io/js/cordovahook-patch-platform.svg)&nbsp;&nbsp;
 ![](https://david-dm.org/mihhail-lapushkin/cordovahook-patch-platform.png)
 
-Cordova allows you to automate the process of modifying platform configuration files through [config-file](http://cordova.apache.org/docs/en/4.0.0/plugin_ref_spec.md.html#Plugin%20Specification_config_file_element) element in plugins. However, the provided functionality is quite limited: XML files and insertions only. You may want to modify non-XML files, replace values within files, add/delete files. This hook aims to provide declarative means of describing all possible modifications that you may want to do and thus releave you from doing any additional manual work on the newly added platform.
+Cordova allows you to automate the process of modifying platform configuration files through [config-file](http://cordova.apache.org/docs/en/4.0.0/plugin_ref_spec.md.html#Plugin%20Specification_config_file_element) element in plugins. However, the provided functionality is quite limited: XML files and insertions only. You may want to modify non-XML files, replace values within files, add/delete files. This hook aims to provide declarative means of describing all possible modifications that you may want to do and thus releave you from doing any additional manual work on the newly added platform. Additionally, you won't have to check in your platform code to the repository.
 
 ## How to install?
 `npm install cordovahook-patch-platform --save`
@@ -93,6 +93,8 @@ This module will be called by the hook after applying patches from `patches.json
 Refer to [howtouse](https://github.com/mihhail-lapushkin/cordovahook-patch-platform/tree/master/howtouse) folder to get an understanding of how to setup this hook in your project.
 
 ## Release History
+ * **0.3.0** / 2015-12-15
+   * Merged [#1](https://github.com/mihhail-lapushkin/cordovahook-patch-platform/pull/1).
  * **0.2.0 – 0.2.2** / 2015-02-08
    * Fixed a bug, which caused failure when `patches.json` was not defined for a platform.
    * Updated dependencies.
